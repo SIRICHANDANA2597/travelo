@@ -1,0 +1,95 @@
+
+
+
+
+
+
+.tt{
+
+    
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 10px;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgb(194, 0, 0), rgb(57, 214, 206), rgb(184, 17, 148));
+  background-repeat: no-repeat;
+  background-size: 100%;
+  animation: animate 2s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+.te{
+
+ background-color:  teal;
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column111 {
+  float: left;
+  width: 407px;
+  margin-bottom: 16px;
+  padding: 20px 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column111 {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card123 {
+  box-shadow: 10px 9px 8px 0 rgba(0, 0, 0, 0.2);
+  height:600px;
+}
+
+.container99 {
+  padding: 10 16px;
+  width: 400px;
+ 
+}
+
+.container99::after, .row111::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row{
+  padding-left: 70px;
+
+}
+.title {
+  color: grey;
+}
+
+.button99 {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+}
+
+.button99:hover {
+  background-color: #555;
+}
+.ttt{
+  position: center;
+    height:400px;
+    width:390px;
+    
+}

@@ -1,0 +1,1386 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.paragraph {
+  font-size: 40px;
+
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 10px;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgb(102, 30, 30), rgb(118, 22, 173), rgb(103, 105, 66));
+  background-repeat: no-repeat;
+  background-size: 100%;
+  animation: animate 2s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff !important;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.teammembers {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#customers {
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  width: 98%;
+  word-break: break-word;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ffffff;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #282c34;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #282c34;
+  color: white;
+}
+
+p1 {
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 10px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #BC290A, #0A92BC, #C9D31F);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  animation: animate 2s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+
+
+
+
+
+
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 6px 12px 0 rgb(38, 158, 173);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  
+}
+
+.flip-card-back {
+  background-color: rgb(38, 158, 173);;
+  color: white;
+  transform: rotateY(180deg);
+}
+.p12{
+
+  width: 200px;
+  height: 200px;
+ 
+ 
+}
+.pf{
+color: black;
+
+}
+
+
+
+
+
+
+.pull-left{
+
+  color: teal;
+}
+.banner_part {
+  position: relative;
+  background-color: #dde5e8;
+  background-image: url("/banner_img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 7, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_banner.scss */
+.banner_part .single_banner_slider .banner_text {
+display: table;
+width: 100%;
+height: 820px;
+}
+
+/* line 11, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_banner.scss */
+.banner_part .single_banner_slider .banner_text .banner_text_iner {
+display: table-cell;
+vertical-align: middle;
+}
+
+@media (max-width: 991px) {
+/* line 7, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_banner.scss */
+.banner_part .single_banner_slider .banner_text {
+  height: 550px;
+}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+/* line 7, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_banner.scss */
+.banner_part .single_banner_slider .banner_text {
+  height: 650px;
+}
+}
+
+/* line 21, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_banner.scss */
+.banner_part .single_banner_slider .banner_text h5 {
+font-size: 24px;
+letter-spacing: 2px;
+}
+
+@media (max-width: 991px) {
+/* line 21, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_banner.scss */
+.banner_part .single_banner_slider .banner_text h5 {
+  font-size: 18px;
+}
+}
+
+/* line 28, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_banner.scss */
+.banner_part .single_banner_slider .banner_text h1 {
+font-size: 80px;
+text-transform: capitalize;
+font-weight: 700;
+line-height: 110px;
+margin: 17px 0 49px;
+}
+
+@media (max-width: 576px) {
+/* line 28, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_banner.scss */
+.banner_part .single_banner_slider .banner_text h1 {
+  font-size: 35px;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+/* line 28, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_banner.scss */
+.banner_part .single_banner_slider .banner_text h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+/* line 28, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_banner.scss */
+.banner_part .single_banner_slider .banner_text h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+/* line 28, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_banner.scss */
+.banner_part .single_banner_slider .banner_text h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+}
+
+/* line 54, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_banner.scss */
+.banner_part .single_banner_slider .banner_text h1 span {
+color: #2f7dfc;
+}
+
+/* line 58, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_banner.scss */
+.banner_part .single_banner_slider .banner_text p {
+font-size: 15px;
+line-height: 1.8;
+font-family: "Roboto Condensed", sans-serif;
+margin-bottom: 70px;
+padding-right: 80px;
+}
+
+@media (max-width: 991px) {
+/* line 58, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_banner.scss */
+.banner_part .single_banner_slider .banner_text p {
+  padding-right: 0;
+  margin-bottom: 10px;
+}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+/* line 58, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_banner.scss */
+.banner_part .single_banner_slider .banner_text p {
+  padding-right: 0;
+}
+}
+
+/* line 73, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_banner.scss */
+.banner_part .single_banner_slider .banner_img {
+position: absolute;
+right: 0;
+top: 30%;
+}
+
+/* line 79, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_banner.scss */
+.banner_part .owl-nav {
+position: absolute;
+right: -20%;
+bottom: 0;
+padding: 35px 80px;
+background-color: #fff;
+}
+
+@media (max-width: 991px) {
+/* line 79, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_banner.scss */
+.banner_part .owl-nav {
+  right: 0;
+  padding: 20px 40px;
+}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+/* line 79, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_banner.scss */
+.banner_part .owl-nav {
+  right: 0;
+  padding: 20px 40px;
+}
+}
+
+/* line 93, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_banner.scss */
+.banner_part .owl-nav .owl-prev,
+.banner_part .owl-nav .owl-next {
+text-transform: capitalize;
+margin: 0 15px !important;
+text-transform: capitalize;
+font-weight: 700 !important;
+}
+
+/* line 101, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_banner.scss */
+.banner_part .owl-nav .owl-prev {
+position: relative;
+}
+
+/* line 103, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_banner.scss */
+.banner_part .owl-nav .owl-prev:after {
+position: absolute;
+right: -17px;
+top: 3px;
+width: 1px;
+height: 16px;
+content: "";
+background-color: #000;
+}
+
+/* line 114, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_banner.scss */
+.banner_part .btn_2 {
+box-shadow: none;
+}
+
+@media (max-width: 991px) {
+/* line 117, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_banner.scss */
+.banner_part .btn_2 .btn_2 {
+  margin-top: 15px;
+}
+}
+
+/* line 122, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_banner.scss */
+.banner_part .slider-counter {
+font-size: 100px;
+font-weight: 700;
+color: #cde8eb;
+position: absolute;
+right: -16%;
+top: 38%;
+}
+
+@media (max-width: 991px) {
+/* line 122, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_banner.scss */
+.banner_part .slider-counter {
+  font-size: 40px;
+}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+/* line 122, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_banner.scss */
+.banner_part .slider-counter {
+  font-size: 40px;
+}
+}
+
+@media (max-width: 991px) {
+/* line 2, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_banner.scss */
+.banner_part {
+  padding: 0;
+}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+/* line 142, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_banner.scss */
+.banner_part .banner_img img {
+  max-width: 75%;
+  float: right;
+}
+}
+
+.btn_1 {
+display: inline-block;
+padding: 19px 61px;
+background-color: #2f7dfc;
+font-size: 15px;
+font-weight: 700;
+-webkit-transition: 0.5s;
+transition: 0.5s;
+text-transform: capitalize;
+color: rgb(0, 0, 0);
+}
+
+/* line 34, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_button.scss */
+.btn_1:hover {
+background-color: rgb(0, 0, 0);
+color: #2f7dfc;
+}
+
+.footer_part {
+background-color: #000;
+padding: 140px 0 25px;
+}
+
+@media (max-width: 991px) {
+/* line 2, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part {
+  padding: 70px 0 25px;
+}
+}
+
+/* line 8, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part img {
+margin-bottom: 35px;
+}
+
+@media (max-width: 576px) {
+/* line 12, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .single_footer_part {
+  margin-bottom: 20px;
+}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+/* line 12, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .single_footer_part {
+  margin-bottom: 20px;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+/* line 12, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .single_footer_part {
+  margin-bottom: 20px;
+}
+}
+
+/* line 28, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .single_footer_part span {
+color: #2f7dfc;
+text-transform: capitalize;
+}
+
+/* line 32, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .single_footer_part .social_icon {
+margin-top: 45px;
+}
+
+@media (max-width: 991px) {
+/* line 32, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .single_footer_part .social_icon {
+  margin-top: 20px;
+}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+/* line 32, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .single_footer_part .social_icon {
+  margin-top: 20px;
+}
+}
+
+/* line 40, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .single_footer_part .social_icon a {
+width: 50px;
+height: 50px;
+display: inline-block;
+background-color: #1a1a1a;
+border-radius: 50%;
+text-align: center;
+color: #fff;
+margin-right: 10px;
+padding-top: 16px;
+}
+
+/* line 50, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .single_footer_part .social_icon a:hover {
+background-color: #fff;
+color: #1a1a1a;
+}
+
+/* line 56, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .single_footer_part h4 {
+font-size: 20px;
+margin-bottom: 40px;
+font-weight: 500;
+color: #fff;
+}
+
+@media (max-width: 576px) {
+/* line 56, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .single_footer_part h4 {
+  margin-bottom: 15px;
+}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+/* line 56, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .single_footer_part h4 {
+  margin-bottom: 15px;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+/* line 56, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .single_footer_part h4 {
+  margin-bottom: 15px;
+}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+/* line 56, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .single_footer_part h4 {
+  font-size: 19px;
+}
+}
+
+/* line 78, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .single_footer_part p {
+margin-bottom: 10px;
+}
+
+/* line 84, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .single_footer_part .list-unstyled li a {
+color: #fff;
+margin-bottom: 14px;
+display: inline-block;
+}
+
+/* line 88, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .single_footer_part .list-unstyled li a:hover {
+color: #2f7dfc !important;
+}
+
+/* line 94, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .single_footer_part .mail_part {
+position: relative;
+display: flex;
+margin-top: 20px;
+}
+
+/* line 98, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .single_footer_part .mail_part input {
+padding: 14px 15px;
+font-size: 13px;
+border-radius: 0;
+border: 1px solid #2f7dfc;
+width: 80%;
+background-color: transparent;
+color: #fff;
+}
+
+/* line 108, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .single_footer_part .mail_part .email_icon {
+background-color: #2f7dfc;
+text-align: center;
+color: #fff;
+border-radius: 0;
+line-height: 10px;
+border: 2px solid #2f7dfc;
+text-transform: capitalize;
+padding: 14px 20px;
+height: 50px;
+}
+
+/* line 122, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .copyright_text {
+border-top: 1px solid #333333;
+margin: 100px 0 0;
+padding: 25px 0 0;
+text-align: center;
+}
+
+@media (max-width: 991px) {
+/* line 122, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .copyright_text {
+  margin: 50px 0 0;
+}
+}
+
+/* line 129, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .copyright_text p {
+color: rgba(255, 255, 255, 0.2);
+font-weight: 500;
+}
+
+/* line 135, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .copyright_text span {
+color: #2f7dfc;
+font-size: 12px;
+}
+
+@media (max-width: 991px) {
+/* line 122, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .copyright_text {
+  text-align: center !important;
+}
+}
+
+/* line 147, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .copyright_text p a {
+color: #2f7dfc;
+-webkit-transition: 0.5s;
+transition: 0.5s;
+}
+
+/* line 151, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .copyright_text p a:hover {
+color: #2f7dfc;
+}
+
+/* line 156, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .info {
+color: red !important;
+}
+
+/* line 159, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .copyright_part {
+margin-top: 45px;
+}
+
+@media (max-width: 991px) {
+/* line 163, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .footer_icon {
+  text-align: center;
+  float: none;
+}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+/* line 169, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .justify-content-around {
+  justify-content: flex-start !important;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+/* line 175, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .justify-content-around {
+  justify-content: flex-start !important;
+}
+}
+.main_menu .navbar-brand {
+padding-top: 0rem;
+padding-bottom: 0px;
+}
+
+/* line 7, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_menu.scss */
+.main_menu .navbar {
+padding: 0px;
+}
+
+/* line 13, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_menu.scss */
+.main_menu .main-menu-item ul li .nav-link {
+color: rgb(124, 28, 28);
+font-size: 14px;
+padding: 35px 25px;
+font-family: "Roboto", sans-serif;
+text-transform: capitalize;
+line-height: 12px;
+font-weight: 400;
+}
+
+/* line 21, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_menu.scss */
+.main_menu .main-menu-item ul li .nav-link:hover {
+color: #000;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+/* line 13, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_menu.scss */
+.main_menu .main-menu-item ul li .nav-link {
+  padding: 35px 20px;
+}
+}
+
+/* line 33, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_menu.scss */
+.main_menu #search_1 i {
+color: #000;
+}
+
+/* line 38, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_menu.scss */
+.main_menu #search_input_box {
+position: fixed;
+left: 50%;
+-webkit-transform: translateX(-50%);
+-moz-transform: translateX(-50%);
+-ms-transform: translateX(-50%);
+-o-transform: translateX(-50%);
+transform: translateX(-50%);
+width: 100%;
+max-width: 1140px;
+z-index: 999;
+text-align: center;
+background: #2f7dfc;
+}
+
+/* line 52, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_menu.scss */
+.main_menu #search_input_box ::placeholder {
+color: #fff;
+}
+
+@media (max-width: 991px) {
+/* line 38, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_menu.scss */
+.main_menu #search_input_box {
+  margin-top: 15px;
+}
+}
+
+/* line 62, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_menu.scss */
+.main_menu #search_input_box .form-control {
+background: transparent;
+border: 0;
+color: #ffffff;
+font-weight: 400;
+font-size: 15px;
+padding: 0;
+}
+
+/* line 71, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_menu.scss */
+.main_menu #search_input_box .btn {
+width: 0;
+height: 0;
+padding: 0;
+border: 0;
+}
+
+/* line 78, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_menu.scss */
+.main_menu #search_input_box .ti-close {
+color: #fff;
+font-weight: 600;
+cursor: pointer;
+padding: 10px;
+padding-right: 0;
+}
+
+/* line 87, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_menu.scss */
+.main_menu .search-inner {
+padding: 5px 5px;
+}
+
+/* line 91, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_menu.scss */
+.main_menu .form-control:focus {
+box-shadow: none;
+}
+
+/* line 95, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_menu.scss */
+.main_menu .active_color {
+color: #f5790b !important;
+}
+
+/* line 99, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_menu.scss */
+.main_menu a i {
+color: #000;
+position: relative;
+z-index: 1;
+font-size: 15px;
+margin-left: 30px;
+}
+
+/* line 108, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_menu.scss */
+.main_menu .cart .dropdown-toggle::after {
+display: inline-block;
+margin-left: .255em;
+vertical-align: .255em;
+content: "";
+border: 0px solid transparent;
+}
+
+/* line 116, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_menu.scss */
+.main_menu .cart i {
+color: #000;
+position: relative;
+z-index: 1;
+font-size: 15px;
+}
+
+/* line 122, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_menu.scss */
+.main_menu .cart i:after {
+position: absolute;
+border-radius: 50%;
+background-color: #2f7dfc;
+width: 14px;
+height: 14px;
+right: -8px;
+top: -8px;
+content: "5";
+text-align: center;
+line-height: 15px;
+font-size: 10px;
+color: #fff;
+}
+.home_menu .main-menu-item {
+padding-left: 0px;
+}
+
+.footer_part .copyright_text {
+border-top: 1px solid #333333;
+margin: 100px 0 0;
+padding: 25px 0 0;
+text-align: center;
+}
+
+@media (max-width: 991px) {
+/* line 122, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .copyright_text {
+  margin: 50px 0 0;
+}
+}
+
+/* line 129, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .copyright_text p {
+color: rgba(85, 5, 5, 0.2);
+font-weight: 500;
+}
+
+/* line 135, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .copyright_text span {
+color: #2f7dfc;
+font-size: 12px;
+}
+
+@media (max-width: 991px) {
+/* line 122, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .copyright_text {
+  text-align: center !important;
+}
+}
+
+/* line 147, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .copyright_text p a {
+color: #2f7dfc;
+-webkit-transition: 0.5s;
+transition: 0.5s;
+}
+
+/* line 151, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
+.footer_part .copyright_text p a:hover {
+color: #2f7dfc;
+}
+
+
+
+
+@font-face {
+font-family: 'BebasNeueRegular';
+
+font-weight: normal;
+font-style: normal;
+}
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+margin:0;
+padding:0;
+}
+html,body {
+margin:0;
+padding:0;
+}
+table {
+border-collapse:collapse;
+border-spacing:0;
+}
+fieldset,img { 
+border:0;
+}
+input{
+border:1px solid #b0b0b0;
+padding:3px 5px 4px;
+color:#979797;
+width:190px;
+}
+address,caption,cite,code,dfn,th,var {
+font-style:normal;
+font-weight:normal;
+}
+ol,ul {
+list-style:none;
+}
+caption,th {
+text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+font-size:100%;
+font-weight:normal;
+}
+q:before,q:after {
+content:'';
+}
+abbr,acronym { border:0;
+}
+/* General Demo Style */
+body{
+font-family: Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+background: #000;
+font-weight: 400;
+font-size: 15px;
+color: #aa3e03;
+overflow-y: scroll;
+overflow-x: hidden;
+}
+.ie7 body{
+overflow:hidden;
+}
+a{
+color: #333;
+text-decoration: none;
+}
+.container{
+position: relative;
+text-align: center;
+}
+.clr{
+clear: both;
+}
+.container > header{
+padding: 10px 10px 10px 10px;
+/* margin: 0px 20px 10px 20px; */
+position: relative;
+display: block;
+text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+text-align: left;
+}
+.container > header h1{
+font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+font-size: 35px;
+line-height: 35px;
+position: relative;
+font-weight: 400;
+color: #fff;
+text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+padding: 0px 0px 5px 0px;
+}
+.container > header h1 span{
+
+}
+.container > header h2, p.info{
+font-size: 16px;
+font-style: italic;
+color: #f8f8f8;
+text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+}
+/* Header Style */
+.codrops-top{
+font-family: Arial, sans-serif;
+line-height: 24px;
+font-size: 11px;
+width: 100%;
+background: #000;
+opacity: 0.9;
+text-transform: uppercase;
+z-index: 9999;
+position: relative;
+-moz-box-shadow: 1px 0px 2px #000;
+-webkit-box-shadow: 1px 0px 2px #000;
+box-shadow: 1px 0px 2px #000;
+}
+.codrops-top a{
+padding: 0px 10px;
+letter-spacing: 1px;
+color: #ddd;
+display: block;
+float: left;
+}
+.codrops-top a:hover{
+color: #fff;
+}
+.codrops-top span.right{
+float: right;
+}
+.codrops-top span.right a{
+float: none;
+display: inline;
+}
+
+p.codrops-demos{
+display: block;
+padding: 15px 0px 60px ;
+
+}
+p.codrops-demos a,
+p.codrops-demos a.current-demo,
+p.codrops-demos a.current-demo:hover{
+display: inline-block;
+border: 1px solid #039aa9;
+padding: 4px 10px 3px;
+font-size: 25px;
+
+line-height: 35px;
+margin: 1px 2px;
+font-weight: 800;
+-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+-moz-box-shadow:0px 1px 1px rgba(0,0,0,0.1);
+box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+color:#fff;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+background: #039aa9;
+background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a90329), color-stop(44%,#8f0222), color-stop(100%,#6d0019));
+background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%);
+background: -o-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%);
+background: -ms-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%);
+background: linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%);
+}
+p.codrops-demos a:hover{
+background: #6d0019;
+}
+p.codrops-demos a:active{
+background: #6d0019;
+background: -moz-linear-gradient(top, #6d0019 0%, #8f0222 56%, #a90329 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6d0019), color-stop(56%,#8f0222), color-stop(100%,#a90329));
+background: -webkit-linear-gradient(top, #6d0019 0%,#8f0222 56%,#a90329 100%);
+background: -o-linear-gradient(top, #6d0019 0%,#8f0222 56%,#a90329 100%);
+background: -ms-linear-gradient(top, #6d0019 0%,#8f0222 56%,#a90329 100%);
+background: linear-gradient(top, #6d0019 0%,#8f0222 56%,#a90329 100%);
+-webkit-box-shadow: 0px 1px 1px rgba(255,255,255,0.9);
+-moz-box-shadow:0px 1px 1px rgba(255,255,255,0.9);
+box-shadow: 0px 1px 1px rgba(255,255,255,0.9);
+}
+p.codrops-demos a.current-demo,
+p.codrops-demos a.current-demo:hover{
+color: #A5727D;
+background: #6d0019;
+}
+/* Media Queries */
+@media screen and (max-width: 767px) {
+.container > header{
+text-align: center;
+}
+p.codrops-demos {
+position: relative;
+top: auto;
+left: auto;
+}
+}
+
+.cb-slideshow,
+.cb-slideshow:after {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+}
+.cb-slideshow:after {
+  content: '';
+
+}
+.cb-slideshow li span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  opacity: 0;
+  z-index: 0;
+-webkit-backface-visibility: hidden;
+  -webkit-animation: imageAnimation 36s linear infinite 0s;
+  -moz-animation: imageAnimation 36s linear infinite 0s;
+  -o-animation: imageAnimation 36s linear infinite 0s;
+  -ms-animation: imageAnimation 36s linear infinite 0s;
+  animation: imageAnimation 36s linear infinite 0s;
+}
+.cb-slideshow li div {
+  z-index: 1000;
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  width: 100%;
+  text-align: right;
+  opacity: 0;
+  -webkit-animation: titleAnimation 36s linear infinite 0s;
+  -moz-animation: titleAnimation 36s linear infinite 0s;
+  -o-animation: titleAnimation 36s linear infinite 0s;
+  -ms-animation: titleAnimation 36s linear infinite 0s;
+  animation: titleAnimation 36s linear infinite 0s;
+}
+.cb-slideshow li div h3 {
+  font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+  font-size: 160px;
+  padding: 0 30px;
+  line-height: 120px;
+ /* color: rgba(169,3,41, 0.8); */
+ color: rgba(245, 225, 72, 0.9);
+}
+.cb-slideshow li:nth-child(1) span { background-image: url("/3.jpg") }
+.cb-slideshow li:nth-child(2) span {
+  background-image: url("/1.jpg");
+  -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  -o-animation-delay: 6s;
+  -ms-animation-delay: 6s;
+  animation-delay: 6s;
+}
+.cb-slideshow li:nth-child(3) span {
+  background-image: url("/2.jpeg");
+  -webkit-animation-delay: 12s;
+  -moz-animation-delay: 12s;
+  -o-animation-delay: 12s;
+  -ms-animation-delay: 12s;
+  animation-delay: 12s;
+}
+.cb-slideshow li:nth-child(4) span {
+  background-image: url("/3.jpg");
+  -webkit-animation-delay: 18s;
+  -moz-animation-delay: 18s;
+  -o-animation-delay: 18s;
+  -ms-animation-delay: 18s;
+  animation-delay: 18s;
+}
+.cb-slideshow li:nth-child(5) span {
+  background-image: url("/1.jpg");
+  -webkit-animation-delay: 24s;
+  -moz-animation-delay: 24s;
+  -o-animation-delay: 24s;
+  -ms-animation-delay: 24s;
+  animation-delay: 24s;
+}
+.cb-slideshow li:nth-child(6) span {
+  background-image: url("/2.jpeg");
+  -webkit-animation-delay: 30s;
+  -moz-animation-delay: 30s;
+  -o-animation-delay: 30s;
+  -ms-animation-delay: 30s;
+  animation-delay: 30s;
+}
+.cb-slideshow li:nth-child(2) div {
+  -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  -o-animation-delay: 6s;
+  -ms-animation-delay: 6s;
+  animation-delay: 6s;
+}
+.cb-slideshow li:nth-child(3) div {
+  -webkit-animation-delay: 12s;
+  -moz-animation-delay: 12s;
+  -o-animation-delay: 12s;
+  -ms-animation-delay: 12s;
+  animation-delay: 12s;
+}
+.cb-slideshow li:nth-child(4) div {
+  -webkit-animation-delay: 18s;
+  -moz-animation-delay: 18s;
+  -o-animation-delay: 18s;
+  -ms-animation-delay: 18s;
+  animation-delay: 18s;
+}
+.cb-slideshow li:nth-child(5) div {
+  -webkit-animation-delay: 24s;
+  -moz-animation-delay: 24s;
+  -o-animation-delay: 24s;
+  -ms-animation-delay: 24s;
+  animation-delay: 24s;
+}
+.cb-slideshow li:nth-child(6) div {
+  -webkit-animation-delay: 30s;
+  -moz-animation-delay: 30s;
+  -o-animation-delay: 30s;
+  -ms-animation-delay: 30s;
+  animation-delay: 30s;
+}
+@-webkit-keyframes imageAnimation { 
+0% {
+    opacity: 0;
+    -webkit-animation-timing-function: ease-in;
+}
+8% {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+    -webkit-animation-timing-function: ease-out;
+}
+17% {
+    opacity: 1;
+    -webkit-transform: scale(1.1) rotate(3deg);
+}
+25% {
+    opacity: 0;
+    -webkit-transform: scale(1.1) rotate(3deg);
+}
+100% { opacity: 0 }
+}
+@-moz-keyframes imageAnimation { 
+0% {
+    opacity: 0;
+    -moz-animation-timing-function: ease-in;
+}
+8% {
+    opacity: 1;
+    -moz-transform: scale(1.05);
+    -moz-animation-timing-function: ease-out;
+}
+17% {
+    opacity: 1;
+    -moz-transform: scale(1.1) rotate(3deg);
+}
+25% {
+    opacity: 0;
+    -moz-transform: scale(1.1) rotate(3deg);
+}
+100% { opacity: 0 }
+}
+@-o-keyframes imageAnimation { 
+0% {
+    opacity: 0;
+    -o-animation-timing-function: ease-in;
+}
+8% {
+    opacity: 1;
+    -o-transform: scale(1.05);
+    -o-animation-timing-function: ease-out;
+}
+17% {
+    opacity: 1;
+    -o-transform: scale(1.1) rotate(3deg);
+}
+25% {
+    opacity: 0;
+    -o-transform: scale(1.1) rotate(3deg);
+}
+100% { opacity: 0 }
+}
+@-ms-keyframes imageAnimation { 
+0% {
+    opacity: 0;
+    -ms-animation-timing-function: ease-in;
+}
+8% {
+    opacity: 1;
+    -ms-transform: scale(1.05);
+    -ms-animation-timing-function: ease-out;
+}
+17% {
+    opacity: 1;
+    -ms-transform: scale(1.1) rotate(3deg);
+}
+25% {
+    opacity: 0;
+    -ms-transform: scale(1.1) rotate(3deg);
+}
+100% { opacity: 0 }
+}
+@keyframes imageAnimation { 
+0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+}
+8% {
+    opacity: 1;
+    transform: scale(1.05);
+    animation-timing-function: ease-out;
+}
+17% {
+    opacity: 1;
+    transform: scale(1.1) rotate(3deg);
+}
+25% {
+    opacity: 0;
+    transform: scale(1.1) rotate(3deg);
+}
+100% { opacity: 0 }
+}
+@-webkit-keyframes titleAnimation { 
+0% {
+    opacity: 0;
+    -webkit-transform: translateX(200px);
+}
+8% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+}
+17% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+}
+19% {
+    opacity: 0;
+    -webkit-transform: translateX(-400px);
+}
+25% { opacity: 0 }
+100% { opacity: 0 }
+}
+@-moz-keyframes titleAnimation { 
+0% {
+    opacity: 0;
+    -moz-transform: translateX(200px);
+}
+8% {
+    opacity: 1;
+    -moz-transform: translateX(0px);
+}
+17% {
+    opacity: 1;
+    -moz-transform: translateX(0px);
+}
+19% {
+    opacity: 0;
+    -moz-transform: translateX(-400px);
+}
+25% { opacity: 0 }
+100% { opacity: 0 }
+}
+@-o-keyframes titleAnimation { 
+0% {
+    opacity: 0;
+    -o-transform: translateX(200px);
+}
+8% {
+    opacity: 1;
+    -o-transform: translateX(0px);
+}
+17% {
+    opacity: 1;
+    -o-transform: translateX(0px);
+}
+19% {
+    opacity: 0;
+    -o-transform: translateX(-400px);
+}
+25% { opacity: 0 }
+100% { opacity: 0 }
+}
+@-ms-keyframes titleAnimation { 
+0% {
+    opacity: 0;
+    -ms-transform: translateX(200px);
+}
+8% {
+    opacity: 1;
+    -ms-transform: translateX(0px);
+}
+17% {
+    opacity: 1;
+    -ms-transform: translateX(0px);
+}
+19% {
+    opacity: 0;
+    -ms-transform: translateX(-400px);
+}
+25% { opacity: 0 }
+100% { opacity: 0 }
+}
+@keyframes titleAnimation { 
+0% {
+    opacity: 0;
+    transform: translateX(200px);
+}
+8% {
+    opacity: 1;
+    transform: translateX(0px);
+}
+17% {
+    opacity: 1;
+    transform: translateX(0px);
+}
+19% {
+    opacity: 0;
+    transform: translateX(-400px);
+}
+25% { opacity: 0 }
+100% { opacity: 0 }
+}
+/* Show at least something when animations not supported */
+.no-cssanimations .cb-slideshow li span{
+opacity: 1;
+}
+@media screen and (max-width: 1140px) { 
+.cb-slideshow li div h3 { font-size: 100px }
+}
+@media screen and (max-width: 600px) { 
+.cb-slideshow li div h3 { font-size: 50px }
+}
